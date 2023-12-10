@@ -1,3 +1,90 @@
+// export const kpis = [
+//  {
+//     totalProfit: {
+//       amount: 10000,
+//       currency: "USD",
+//     },
+//     totalRevenue: {
+//       amount: 15000,
+//       currency: "USD",
+//     },
+//     totalExpenses: {
+//       amount: 5000,
+//       currency: "USD",
+//     },
+//     expensesByCategory: new Map([
+//       ["Marketing", { amount: 2000, currency: "USD" }],
+//       ["Rent", { amount: 1500, currency: "USD" }],
+//       ["Utilities", { amount: 1000, currency: "USD" }],
+//     ]),
+//     monthlyData: [
+//       {
+//         month: "January",
+//         revenue: {
+//           amount: 4000,
+//           currency: "USD",
+//         },
+//         expenses: {
+//           amount: 2000,
+//           currency: "USD",
+//         },
+//         operationalExpenses: {
+//           amount: 1500,
+//           currency: "USD",
+//         },
+//         nonOperationalExpenses: {
+//           amount: 500,
+//           currency: "USD",
+//         },
+//       },
+//       {
+//         month: "February",
+//         revenue: {
+//           amount: 5000,
+//           currency: "USD",
+//         },
+//         expenses: {
+//           amount: 2500,
+//           currency: "USD",
+//         },
+//         operationalExpenses: {
+//           amount: 1800,
+//           currency: "USD",
+//         },
+//         nonOperationalExpenses: {
+//           amount: 700,
+//           currency: "USD",
+//         },
+//       },
+//     ],
+//     dailyData: [
+//       {
+//         date: "2023-10-26",
+//         revenue: {
+//           amount: 200,
+//           currency: "USD",
+//         },
+//         expenses: {
+//           amount: 100,
+//           currency: "USD",
+//         },
+//       },
+//       {
+//         date: "2023-10-27",
+//         revenue: {
+//           amount: 300,
+//           currency: "USD",
+//         },
+//         expenses: {
+//           amount: 150,
+//           currency: "USD",
+//         },
+//       },
+//     ],
+//   }
+  
+// ]
+
 export const kpis = [
   {
     _id: "63bf8239f03239e002001612",
@@ -4016,3 +4103,4 @@ export const transactions = [
     productIds: ["63bf7ac9f032394f5f002437"],
   },
 ];
+
