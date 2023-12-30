@@ -1,9 +1,13 @@
 import DashBoardBox from '@/components/DashBoardBox'
+import { useGetProductsQuery } from '@/state/api'
 import React from 'react'
 
 type Props = {}
 
 const Row2 = (props: Props) => {
+  const {data} = useGetProductsQuery()
+  console.log(data)
+
   return (
     <>
         <DashBoardBox gridArea="d"></DashBoardBox>

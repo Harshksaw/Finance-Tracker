@@ -9,9 +9,10 @@ import kpiRoutes from "./routes/kpi.js";
 // import productRoutes from "./routes/product.js";
 // import transactionRoutes from "./routes/transaction.js";
 import KPI from "./models/KPI.js";
+import Product from "./models/Product.js";
 
-import {kpis} from  "./data/data.js"
-// import Product from "./models/Product.js";
+import {products, kpis} from  "./data/data.js"
+import productRoutes from "./routes/product.js";
 // import Transaction from "./models/Transaction.js";
 
 
@@ -28,7 +29,7 @@ app.use(cors());
 
 /* ROUTES */
 app.use("/kpi", kpiRoutes);
-// app.use("/product", productRoutes);
+app.use("/product", productRoutes);
 // app.use("/transaction", transactionRoutes);
 
 /* MONGOOSE SETUP */
@@ -43,6 +44,7 @@ mongoose
 
     // await mongoose.connection.db.dropDatabase()
     // KPI.insertMany(kpis)
+    // Product.insertMany(products)
 
   })
   .catch((error) => console.log(`${error} did not connect`))
