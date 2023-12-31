@@ -6,9 +6,9 @@ import BoxHeader from '@/components/DashBoardBox'
 import { useGetKpisQuery } from '@/state/api'
 import { PureComponent } from 'react';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer , Line, Legend, LineChart, BarChart, Bar, Rectangle } from 'recharts';
-import { useTheme } from '@mui/material';
+import { Typography, useTheme } from '@mui/material';
 import { Margin } from '@mui/icons-material';
-
+import DashboardBox from "@/components/DashBoardBox";
 
 type Props = {}
 
@@ -66,10 +66,37 @@ const Row1 = (props: Props) => {
   return (
     <>
     <DashBoardBox gridArea="a">
-      <BoxHeader title="Revenue & Expenses" 
-      subtitle="Monthly revenue and expenses"
 
-      />
+    <DashboardBox
+          sx={{
+            display: "grid", // Switch to grid layout
+            gridTemplateColumns: "1fr auto", // Create two columns, one flexible and one auto-sized
+            alignItems: "flex-start", // Keep top-right alignment
+            backgroundColor: "lightblue",
+          }}
+        >
+          <Typography variant="h3" sx={{
+              fontWeight: "bold",
+              ml: 5,
+              color: "darkblue",
+              fontFamily: "Open Sans",
+              fontSize: "25px",
+            }}>Revenue and Expenses</Typography>
+          <Typography variant="h6" sx={{
+              fontWeight: "semibold",
+              m: "auto",
+              paddingRight: "1rem",
+              color: "blue",
+              fontFamily: "Open Sans",
+              fontSize: "15px",
+            }}>
+            {" "}
+            Monthly revenue and expenses
+          </Typography>
+        </DashboardBox>
+   
+   
+
     <ResponsiveContainer width="100%" height="100%">
         <AreaChart
           width={500}
@@ -104,10 +131,23 @@ const Row1 = (props: Props) => {
 
     <DashBoardBox gridArea="b">
 
-      <BoxHeader title="Profit & Revenue" 
-      // subtitle="Monthly revenue and expenses"
-     
-      />
+       <DashboardBox
+          sx={{
+            display: "grid", // Switch to grid layout
+            gridTemplateColumns: "1fr auto", // Create two columns, one flexible and one auto-sized
+            alignItems: "flex-start", // Keep top-right alignment
+            backgroundColor: "lightblue",
+          }}
+        >
+          <Typography variant="h3" sx={{
+              fontWeight: "bold",
+              ml: 5,
+              color: "darkblue",
+              fontFamily: "Open Sans",
+              fontSize: "25px",
+            }}>Profit and Revenue</Typography>
+        
+        </DashboardBox>
     <ResponsiveContainer width="100%" height="100%">
         <LineChart
           width={500}
@@ -139,7 +179,26 @@ const Row1 = (props: Props) => {
     </DashBoardBox>
 
     <DashBoardBox gridArea="c">
-    <BoxHeader title="Revenue Month by Month" subtitle="Revenue Month by Month" />
+
+    <DashboardBox
+          sx={{
+            display: "grid", // Switch to grid layout
+            gridTemplateColumns: "1fr auto", // Create two columns, one flexible and one auto-sized
+            alignItems: "flex-start", // Keep top-right alignment
+            backgroundColor: "lightblue",
+          }}
+        >
+          <Typography variant="h3" sx={{
+              fontWeight: "bold",
+              ml: 5,
+              color: "darkblue",
+              fontFamily: "Open Sans",
+              fontSize: "25px",
+            }}>
+              Revenue Month by Month
+            </Typography>
+        
+        </DashboardBox>
     <ResponsiveContainer width="100%" height="100%">
     <BarChart
           width={500}
