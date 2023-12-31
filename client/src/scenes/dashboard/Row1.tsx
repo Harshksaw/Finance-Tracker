@@ -105,8 +105,8 @@ const Row1 = (props: Props) => {
     <DashBoardBox gridArea="b">
 
       <BoxHeader title="Profit & Revenue" 
-      subtitle="Monthly revenue and expenses"
-      sideText="+5%"
+      // subtitle="Monthly revenue and expenses"
+     
       />
     <ResponsiveContainer width="100%" height="100%">
         <LineChart
@@ -139,7 +139,7 @@ const Row1 = (props: Props) => {
     </DashBoardBox>
 
     <DashBoardBox gridArea="c">
-    <BoxHeader title="Revenue Month by Month" subtitle="Revenue Month by Month" sideText="+5%" />
+    <BoxHeader title="Revenue Month by Month" subtitle="Revenue Month by Month" />
     <ResponsiveContainer width="100%" height="100%">
     <BarChart
           width={500}
